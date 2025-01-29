@@ -7,7 +7,7 @@ import appstore from "../assets/appstore.png";
 const KeyFeatures = () => {
   return (
     <div className='bg-orange-50 py-20' >
-        <div className='flex max-w-7xl mx-auto' >
+        <div className='flex flex-col lg:flex-row mx-auto max-w-7xl' >
             <div className='lg:w-1/2 flex items-center justify-center' >
                 <Lottie animationData={chef} className='w-[500px]'/>
             </div>

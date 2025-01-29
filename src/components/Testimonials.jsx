@@ -51,7 +51,7 @@ const Testimonial = () => {
                     "--swiper-pagination-bullet-inactive-color": "#999999",
                     "--swiper-pagination-bullet-inactive-opacity": "1",
                     "--swiper-pagination-bullet-size": "10px",
-                    "--swiper-pagination-bullet-horizontal-gap": "6px"
+                    "--swiper-pagination-bullet-horizontal-gap": "8px"
                   }}
                     modules={[Pagination, Autoplay]}
                     loop={true}
@@ -65,18 +65,12 @@ const Testimonial = () => {
                         768: { slidesPerView: 2 },
                         1024: { slidesPerView: 3 },
                       }}
-                    pagination={{
-                        el: ".swiper-pagination",
-                        type: "bullets",
-                        clickable: true,
-                        
-                        
-                    }}
-                    className="mySwiper"
+                    pagination={{ clickable: true }}
+                    className="mySwiper pb-10"
                 >
                     {
                         testimonials.map((item)=> {
-                            return <SwiperSlide key={item.id}>
+                            return <SwiperSlide key={item.id} className='pb-10' >
                             <div className='border border-gray-400 shadow-md shadow-orange-500 rounded-lg flex flex-col p-4'>
                                 {item.rating === 4 ? ( <div className='flex'>
                                     <Star fill='true' />
@@ -106,7 +100,7 @@ const Testimonial = () => {
                         </SwiperSlide>
                         })
                     }
-                    <div className='swiper-pagination my-10 gap-1 relative'></div>
+                    <div className='swiper-pagination absolute left-1/2 transform -translate-x-1/2 bottom-0 mt-6 '></div>
                 </Swiper>
             </div>
 

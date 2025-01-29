@@ -10,12 +10,12 @@ const Contact = () => {
                 <h2 className='text-3xl lg:text-4xl font-bold tracking-tight text-red-500' >Contact us</h2>
                 <p className='mt-2 text-lg lg:text-xl leading-8 text-gray-600' >Please provide your details below</p>
             </div>
-            <div className='grid grid-cols-2' >
+            <div className='lg:grid lg:grid-cols-2 mt-10 lg:mt-0' >
                 <Lottie animationData={delivery} />
                 <form action="#" className="lg:mx-auto mt-16 max-w-xl sm:mt-20 bg-orange-50 p-8 rounded-lg mx-4 ">
                         <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
                             <div>
-                                <label htmlFor="first-name" className="block text-sm font-semibold leading-6 ">
+                                <label htmlFor="first-name" className="block text-sm md:text-base font-semibold leading-tight mb-1 ">
                                     First name <span className='text-red-500'>*</span>
                                 </label>
                                 <div className="mt-2.5">
@@ -29,7 +29,7 @@ const Contact = () => {
                                 </div>
                             </div>
                             <div>
-                                <label htmlFor="last-name" className="block text-sm font-semibold leading-6">
+                                <label htmlFor="last-name" className="block text-sm md:text-base font-semibold leading-tight mb-1">
                                     Last name <span className='text-red-500'>*</span>
                                 </label>
                                 <div className="mt-2.5">
@@ -44,7 +44,7 @@ const Contact = () => {
                             </div>
 
                             <div className="sm:col-span-2">
-                                <label htmlFor="email" className="block text-sm font-semibold leading-6">
+                                <label htmlFor="email" className="block text-sm md:text-base font-semibold leading-tight mb-1">
                                     Email <span className='text-red-500'>*</span>
                                 </label>
                                 <div className="mt-2.5">
@@ -58,7 +58,7 @@ const Contact = () => {
                                 </div>
                             </div>
                             <div className="sm:col-span-2">
-                                <label htmlFor="phone-number" className="block text-sm font-semibold leading-6">
+                                <label htmlFor="phone-number" className="block text-sm md:text-base font-semibold leading-tight mb-1">
                                     Phone number
                                 </label>
                                 <div className="relative mt-2.5">
@@ -72,7 +72,7 @@ const Contact = () => {
                                 </div>
                             </div>
                             <div className="sm:col-span-2">
-                                <label htmlFor="message" className="block text-sm font-semibold leading-6">
+                                <label htmlFor="message" className="block text-sm md:text-base font-semibold leading-tight mb-1">
                                     Message <span className='text-red-500'>*</span>
                                 </label>
                                 <div className="mt-2.5">
